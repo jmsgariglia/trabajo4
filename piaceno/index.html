@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+   
+    <title>piacceno</title>
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav id="navbar">
+        <ul class="menu">
+          <li>
+            <a href="#" class="logo-link"
+              ><img
+                src="https://o.remove.bg/downloads/d5b286e9-15a5-4693-8217-da6ff5137b78/logo-removebg-preview.png"
+                alt="piacceno logo"
+                class="logo"
+            /></a>
+          </li>
+
+          <div class="container-items">
+            <li class="item item-link"><a href="#about">Info</a></li>
+            <li class="item item-link">
+              <a href="#description">Descripcion</a>
+            </li>
+            <li class="item item-link"><a href="#products">Productos</a></li>
+            <li class="item">
+              <a href="#cartSection">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+                <span id="totalItems"></span>
+              </a>
+            </li>
+          </div>
+
+          <div class="btn__container">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--* Section 1 About -->
+      <section class="about__section" id="about">
+        <div class="about__content">
+          <img
+            src="https://mibebeyyo.elmundo.es/images/bebes2/vestir-bebe-verano.webp"
+            alt="primera"
+            class="title-img"
+          />
+          <p>
+            Conoce nuetras colecciones, no te quedes sin lo que necesitas!
+          </p>
+          <a href="#listProducts" class="btn">Quiero ver</a>
+        </div>
+        <div class="about__content--img">
+          <img src="https://minutusshop.com/wp-content/uploads/2020/01/bebe-nacido-en-verano.jpg" alt="segunda" />
+        </div>
+      </section>
+      <!-- Terminada la seccion 1 -->
+      <!-- Seccion 2 Description -->
+      <section class="description__section" id="description">
+        <h2>Aprovecha nuestras ofertas</h2>
+        <h3>
+          Hacemos envios a todo el pais
+          ...
+        </h3>
+        <div class="card__container">
+          <!--* Card 1 -->
+          <div class="card">
+            <img
+              src="https://o.remove.bg/downloads/bb62b887-6ea7-4c2b-934f-f07de6bdb84e/png-transparent-facebook-like-button-facebook-like-button-computer-icons-symbol-like-rectangle-thumb-signal-like-removebg-preview.png"
+              alt="info 1"
+              class="info-card"
+            />
+            <p>
+                Ofrecemos el mejor precio en el mercado, garantizado. Si usted encuentra a otra empresa que ofrece un mejor precio que el nuestro, no solo le igualamos el precio, sino que además le reducimos un 10% adicional a ese precio.
+            </p>
+          </div>
+          <!--* Card 2 -->
+          <div class="card">
+            <img
+              src="https://o.remove.bg/downloads/380518be-709f-4632-af76-76d49b69ed07/png-clipart-shopping-cart-shopping-cart-removebg-preview.png"
+              alt="info 1"
+              class="info-card"
+            />
+            <p>
+              Tenemos las mejores opciones de compras online, pagina totalmente seguro para que puedas disfrutar de comprar con nosotros y asi acceder a todos nuestros beneficios
+            </p>
+          </div>
+          <!--* Card 3 -->
+          <div class="card">
+            <img
+              src="https://o.remove.bg/downloads/6fc8ff6e-bbc0-41cb-94f1-62dd45c41db3/kisspng-computer-icons-transport-truck-service-5af32e639a9914.9749821515258865636332-removebg-preview.png"
+              alt="info 1"
+              class="info-card"
+            />
+            <p>
+              Le das al boton de comprar y listo! Ya tenes tus Pedidos, envios a todo el pais, seguro, rapido y economico. Esperalo en la comodidad de tu casa, nosotros nos ocupamos
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Terminada la section description -->
+      <!--* List Products -->
+      <section class="listproducts__section" id="products">
+        <h2>Lista de productos</h2>
+        <!-- Container para las prendas -->
+        <div class="products__container">
+          <!-- los articulos -->
+          <!-- 1 -->
+          <div class="product">
+            <img
+              src="https://www.casaytextil.com/server/Portal_0001578/img/blogposts/ropa-de-bebe-que-ponerle-en-cada-ocasion_6319.jpg"
+              alt="Gorro y tapadito"
+              class="cokemon"
+            />
+            <p class="product__title">Gorrito y Tapado</p>
+            <span class="product__price">$1200</span>
+            <button
+              class="product__btn"
+              data-img="https://www.casaytextil.com/server/Portal_0001578/img/blogposts/ropa-de-bebe-que-ponerle-en-cada-ocasion_6319.jpg"
+              data-name="Balbasaur"
+              data-price="1200"
+              data-count="1"
+              id="btnComprar"
+            >
+              Comprar
+            </button>
+          </div>
+          <!-- 2 -->
+          <div class="product">
+            <img
+              src="https://i.pinimg.com/736x/69/4b/31/694b3177ab9beee290c65e541c9a2b06.jpg"
+              alt="balbasaur"
+              class="cokemon"
+            />
+            <p class="product__title">Manta + Enterito</p>
+            <span class="product__price">$1500</span>
+            <button
+              class="disabled"
+              data-img="https://i.pinimg.com/736x/69/4b/31/694b3177ab9beee290c65e541c9a2b06.jpg"
+              data-name="Manta + Enterito"
+              data-price="1500"
+              data-count="1"
+              id="btnComprar"
+            >
+              Comprar
+            </button>
+            <div class="sinStock">sin stock</div>
+          </div>
+          <!-- 3 -->
+          <div class="product">
+            <img
+              src="https://www.manaiva.com/3805-large_default/conjunto-plush-amorosa.jpg"
+              alt="balbasaur"
+              class="cokemon"
+            />
+            <p class="product__title">Conjuntito</p>
+            <span class="product__price">$192</span>
+            <button
+              class="product__btn"
+              data-img="https://www.manaiva.com/3805-large_default/conjunto-plush-amorosa.jpg"
+              data-name="Conjuntito"
+              data-price="192"
+              data-count="1"
+              id="btnComprar"
+            >
+              Comprar
+            </button>
+         
+
+            <!-- <div class="sinStock">Sin Stock. Volo</div> -->
+          </div>
+        </div>
+      </section>
+      <!-- Section Terminada -->
+      <!-- Section Carrito -->
+      <section class="cart__section" id="cartSection">
+        <h2>Carrito de compras</h2>
+        <p>
+          Compra segura con piacceno babies
+        </p>
+        <div class="cart__container" id="cart">
+          <div class="productVacio">No hay productos seleccionados</div>
+          <!-- item 1 -->
+          <div class="cart__item">
+            <div class="cart__item--content">
+           
+              <p class="cart__title">no ha elegido un producto</p>
+              <span class="cart__price">$0</span>
+            </div>
+          </div>
+        </div>
+        <!-- total -->
+        <div class="total__items">
+          <div class="total__price">
+            <p class="total">Total:</p>
+            $
+            <span id="totalProducts"></span>
+          </div>
+          <button class="cart__btn">Finalizar Compra</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="title">
+        <img src="./img/pedimon-text.png" alt="" class="title" />
+      </div>
+      <div class="contacto">
+        <h2>Contacto</h2>
+        <a href="tel:341-3252456">341-3252456</a>
+        <p>Sarmiento 888</p>
+      </div>
+
+      <div class="redes-sociales">
+        <h2>Redes Sociales</h2>
+        <p>
+            <img src="https://o.remove.bg/downloads/7cc0b6bc-c6f9-4834-a235-11846b67243e/download-removebg-preview.png" alt="facebook">
+        <a href="www.facebook.com" class="icon-facebook" target="_blank"></a>
+        <img src="https://o.remove.bg/downloads/71dcaf47-2480-4c98-8d01-8d4b5dea8755/download-removebg-preview.png" alt="facebook">
+        <a href="www.instagram.com" class="icon-facebook" target="_blank"></a>
+        </p>
+
+      </div>
+
+      <div class="legales">
+        <h2>Legales</h2>
+        <p>
+            Legales
+
+            Política de privacidad
+            Términos y Condiciones
+            Libro de quejas
+        </p>
+      </div>
+      <p>ROSARIO - PROVINCIA SANTA FE</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
